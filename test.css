@@ -1,0 +1,709 @@
+/*<!-- 版面設定 --> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    color: rgb(83, 76, 5);
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    box-shadow: 0 1px rgb(223, 221, 212);
+    z-index: 100;
+    border-radius: 0 0 10px 10px;
+    .header-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .menu-bar{
+            width: 25vw;
+            img{
+                display: none;
+                width: 20px;
+                height: 20px;
+            }
+            .divbar2{
+                display: none;
+                border-radius: 0 0 10px 10px;
+                
+                flex-direction: column;
+                font-size: 22px;
+                box-shadow: 0 1px rgb(223, 221, 212);
+                img{
+                    width: 500px;
+                    height: 500px;
+                    
+                }
+                hr{
+                    color: antiquewhite;
+                }
+                a{
+                    color: rgb(36, 49, 12);
+                    font-size: 18px;
+                    transition: all 0.2s ease;
+                    padding: 5px 20px 5px 20px;
+                    width: 260px;
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        background-color: rgb(216, 210, 155);
+                        border-bottom: 1px solid rgb(221, 199, 0);
+                        border-radius: 10px;
+                    }
+                }
+            }
+            
+            
+        }
+        div.logo{
+            text-align: center;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            h1{
+                font-size: 25px;
+            }
+        }
+        div.icon{
+            display: flex;
+            text-align: right;
+            width: 25vw;
+            justify-content: center;
+            align-items:center;
+            img{
+                padding: 3px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .divbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 10px 10px;
+        nav {
+            display: flex;
+            font-size: 22px;
+            justify-content: center;
+            box-shadow: 0 1px rgb(223, 221, 212);
+            a{
+                color: rgb(36, 49, 12);
+                font-size: 18px;
+                transition: all 0.2s ease;
+                padding: 5px 20px 5px 20px;
+                text-align: center;
+                &:hover{
+                    background-color: rgb(216, 210, 155);
+                    border-bottom: 1px solid rgb(221, 199, 0);
+                    border-radius: 10px;
+                }
+            }
+        }   
+    }
+    
+}
+
+
+
+main{
+    
+    div.sbbox{
+        height: 100px;
+    }
+    /*<!-- 第二區 首頁 -->*/
+    section.background-img{
+        min-height: 60vh;
+        background-image: url("../img/background4.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: white;
+            font-size: 25px;
+        }
+    }
+    /*<!-- 第三區 關於我們 -->*/
+    section.about{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        div.topimg{ 
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(243, 240, 218);
+            img{
+                width: 25vw;
+                height: 9vh;
+                
+            }
+        }
+        div.goodrice{
+            background-color: rgb(243, 240, 218);
+            display: flex;
+            width: 50vw;
+            height: 27vh;
+            
+            h1{
+                display: flex;
+                background-color: rgb(240, 217, 154);
+                font-size: 45px;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 27vh;
+                border-radius:30px;
+            }
+            p{
+                background-color: rgb(243, 240, 218);
+                font-size: 20px;
+                color: rgb(73, 90, 50);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    /*<!-- 第四區 米食專區 -->*/
+    div.ricefood{
+        .ricefood-Lbox{
+            .fontbox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                hr{
+                    width: 50%;
+                    height: 1px;
+                    color: rgb(204, 201, 180);
+                }
+                
+            }
+        }
+    }
+    /*<!-- swiper-->*/
+    div.swiper-top {
+        position: relative;
+        width: 93%;
+        margin: auto;
+        div.swiper {
+            width: calc(100% - 100px);
+            margin: auto;
+            height: 300px;
+            div.swiper-slide {
+                object-fit: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .a{
+                    img{
+                        width: 200px;
+                    height: 200px;
+                    }
+                }
+                h2{
+                    text-align: center;
+                    font-size: 20px;
+                    margin: 5px;
+                }
+                p{
+                    text-align: center;
+                    font-size: 20px;
+                    color: rgb(238, 56, 0);
+                }
+                a{
+                    text-decoration: none;
+                    background-color: rgb(243, 240, 218);
+                    font-size: 15px;
+                    color: rgb(36, 49, 12);
+                    text-align: center;
+                    width: 150px;
+                    height: 40px;
+                    margin: 5px;
+                    &:hover{
+                        background-color: rgb(216, 210, 155);
+                        border-bottom: 1px solid rgb(221, 199, 0);
+                        border-radius:30px;
+                        color: rgb(238, 56, 0);
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination.swiper-pagination-1{
+        bottom: -2rem;
+    }
+    /*<!--swiper End-->*/ 
+    
+
+    /*<!-- 第五區 黃金冠軍米 -->*/
+    div.goldrice{
+        margin-top: 50px;
+        .goldrice-Lbox{
+            .fontbox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                hr{
+                    width: 50%;
+                    height: 1px;
+                    color: rgb(204, 201, 180);
+                }
+                
+            }
+            .goldrice-Mbox{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .goldrice-Sbox{
+                    
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .aa{
+                    
+                        a{
+                            img{
+                                width: 200px;
+                                height: 200px;
+                            }
+                            
+                            h2{
+                                text-align: center;
+                            }
+                            p{
+                                text-align: center;
+                                color: rgb(202, 60, 60);
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .ab{
+                        a{
+                            text-decoration: none;
+                            background-color: rgb(243, 240, 218);
+                            font-size: 15px;
+                            color: rgb(36, 49, 12);
+                            text-align: center;
+                            width: 150px;
+                            height: 30px;
+                            margin: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover{
+                                background-color: rgb(216, 210, 155);
+                                border-bottom: 1px solid rgb(221, 199, 0);
+                                border-radius:30px;
+                                color: rgb(238, 56, 0);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .goldrice-Mbox2{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 50px;
+                .goldrice-Sbox{
+                    
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .aa{
+                    
+                        a{
+                            img{
+                                width: 200px;
+                                height: 200px;
+                            }
+                            
+                            h2{
+                                text-align: center;
+                            }
+                            p{
+                                text-align: center;
+                                color: rgb(202, 60, 60);
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .ab{
+                        a{
+                            text-decoration: none;
+                            background-color: rgb(243, 240, 218);
+                            font-size: 15px;
+                            color: rgb(36, 49, 12);
+                            text-align: center;
+                            width: 150px;
+                            height: 30px;
+                            margin: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover{
+                                background-color: rgb(216, 210, 155);
+                                border-bottom: 1px solid rgb(221, 199, 0);
+                                border-radius:30px;
+                                color: rgb(238, 56, 0);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    /*<!-- 第六區 特價專區 -->*/
+    div.onsale{
+        .onsale-Lbox{
+            .fontbox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+                font-size: 26px;
+                hr{
+                    width: 50%;
+                    height: 1px;
+                    color: rgb(204, 201, 180);
+                }
+            }
+        }
+    }
+}
+
+
+
+/*<!-- 第七區 footer --> */
+footer{
+    margin-top: 100px;
+    background-color: rgb(243, 240, 218);
+    padding: 50px;
+    .footer-lbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logobox{
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            .p{
+                display: flex;
+                justify-content: space-between;
+                width: 70px;
+            }
+        }
+        .fontbox{
+            width: 40vw;
+        }
+        .footer-mbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            
+            .imgbox{
+                border: solid rgb(238, 186, 186);
+                margin: 15px;
+                background-color: rgb(245, 232, 232);
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*<!-- RWD 手機版 --> */
+
+/* header */
+
+@media (max-width:1030px){
+    header{
+        height: 70px;
+        .header-box{
+            .menu-bar{
+                display: flex;
+                align-items: center;
+                button{
+                    background-color: rgb(255, 255, 255);
+                    border: none;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        margin-left: 30px;
+                        cursor: pointer;
+                    }
+                }
+                .divbar2{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 999;
+                    width: 280px;
+                    height: 100vh;
+                    background-color: rgb(243, 240, 218);
+                    transition: 0.2s;
+                    box-shadow: 2px 0 20px 0 rgba(0,0,0,0.5);
+                    transition: 0.4s all linear;
+                    padding: 20px;
+                    a{
+                        &:hover{
+                            background-color: rgb(216, 210, 155);
+                            border-bottom: 1px solid rgb(221, 199, 0);
+                            border-radius: 10px;
+                        }
+                    }
+
+                }
+            }
+            .menu-bar:hover .divbar2{
+                display: block;
+            }
+
+
+        }
+        
+        .divbar{
+            display: none;
+        }
+    } 
+}
+
+@media (max-width:810px){
+    main{
+        section.background-img{
+            min-height: 40vh;
+        }
+        section.about{
+            div.topimg{
+                img{
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+            div.goodrice{
+                height: 180px;
+                h1{
+                    font-size: 30px;
+                    height: 180px;
+                }
+                p{
+                    font-size: 15px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 10px;
+        .footer-lbox{
+            
+            .logobox{
+                display: none;
+            }
+            .fontbox{
+                width: 65vw;
+            }
+        }
+    }
+        
+}
+
+@media (max-width:450px){
+    header{
+        .menu-bar{
+            width: 10px;
+            img{
+                
+                width: 20px;
+                height: 20px;
+                
+            }
+        }
+        div.logo{
+            width: 80vw;
+            img{
+                display: none;
+            }
+            h1{
+                font-size: 10px;
+            }
+        }
+    }
+    main{
+        section.background-img{
+            min-height: 30vh;
+            h3{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        section.about{
+            display: flex;
+            flex-direction: column;
+            div.topimg{
+                img{
+                    width: 300px;
+                }
+            }
+            div.goodrice{
+                width: 300px;
+                height: 130px;
+                h1{
+                    font-size: 25px;
+                    width: 100px;
+                    height: 130px;
+                }
+                p{
+                    font-size: 15px;
+                    align-items: normal;
+                    padding: 10px;
+                }
+            }
+        }
+        div.goldrice{
+            .goldrice-Lbox{
+                .goldrice-Mbox{
+                    .goldrice-Sbox{
+                        margin: 5px;
+                        width: 150px;
+                        .aa{
+                            a{
+                                img{
+                                    width: 140px;
+                                    height: 140px;
+                                }
+                                h2{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .ab{
+                            a{
+                                width: 120px;
+                                font-size: 13px;
+                                height: 20px;
+
+                            }
+                        }
+                    }
+                }
+                .goldrice-Mbox2{
+                    .goldrice-Sbox{
+                        margin: 5px;
+                        width: 150px;
+                        .aa{
+                            a{
+                                img{
+                                    width: 140px;
+                                    height: 140px;
+                                }
+                                h2{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .ab{
+                            a{
+                                width: 120px;
+                                font-size: 13px;
+                                height: 20px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 0px;
+        .footer-lbox{
+            display: flex;
+            flex-direction: column;
+            .logobox{
+                display: none;
+                
+            }
+            .fontbox{
+                width: 100vw;
+                font-size: 15px;
+                text-align: center;
+            }
+            .footer-mbox{
+                display: flex;
+                justify-content: center;
+                .imgbox{
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
