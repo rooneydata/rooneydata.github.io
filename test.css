@@ -474,7 +474,7 @@ footer{
 
 /* header */
 
-@media (max-width:1030px){
+@media only screen and (max-width:1030px){
     header{
         height: 70px;
         .header-box{
@@ -528,7 +528,7 @@ footer{
     } 
 }
 
-@media (max-width:810px){
+@media only screen and (max-width:810px){
     main{
         section.background-img{
             min-height: 40vh;
@@ -568,7 +568,7 @@ footer{
         
 }
 
-@media (max-width:450px){
+@media only screen and (max-width:450px){
     header{
         .menu-bar{
             width: 10px;
